@@ -36,7 +36,7 @@ export default function TripCard({
           align="center"
           justify="space-between"
         >
-          <Text style={styles.tripName}>{name}</Text>
+          <Text style={styles.tripName} testID="CardInfo:name">{name}</Text>
           <TouchableOpacity
             onPress={() => {
               console.log("Botão pressionado");
@@ -62,19 +62,19 @@ export default function TripCard({
           align="flex-start"
           justify="center"
         >
-          <Text style={styles.detailsText}>
+          <Text style={styles.detailsText} testID="CardInfo:currency">
             <MaterialIcons name="place" size={12} color="#FA9984" />
             {currency}
           </Text>
-          <Text style={styles.detailsText}>
+          <Text style={styles.detailsText} testID="CardInfo:budget">
             <MaterialIcons name="savings" size={12} color="#FA9984" />
             {budget}
           </Text>
-          <Text style={styles.detailsText}>
+          <Text style={styles.detailsText} testID="CardInfo:start">
             <MaterialIcons name="east" size={12} color="#FA9984" />
             {start}
           </Text>
-          <Text style={styles.detailsText}>
+          <Text style={styles.detailsText} testID="CardInfo:end">
             <MaterialIcons name="west" size={12} color="#FA9984" />
             {end}
           </Text>
