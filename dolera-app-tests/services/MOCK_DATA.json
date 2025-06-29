@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Italy 2023",
+    "currency": "euro",
+    "startDate": "2023-05-10",
+    "endDate": "2023-05-25",
+    "budget": "4500"
+  },
+  {
+    "name": "Japan 2024",
+    "currency": "yen",
+    "startDate": "2024-04-01",
+    "endDate": "2024-04-15",
+    "budget": "5200"
+  },
+  {
+    "name": "United States 2022",
+    "currency": "dollar",
+    "startDate": "2022-08-12",
+    "endDate": "2022-08-30",
+    "budget": "6000"
+  },
+  {
+    "name": "France 2023",
+    "currency": "euro",
+    "startDate": "2023-09-05",
+    "endDate": "2023-09-20",
+    "budget": "4700"
+  },
+  {
+    "name": "Mexico 2022",
+    "currency": "mexican peso",
+    "startDate": "2022-11-01",
+    "endDate": "2022-11-10",
+    "budget": "3200"
+  },
+  {
+    "name": "Australia 2024",
+    "currency": "australian dollar",
+    "startDate": "2024-02-15",
+    "endDate": "2024-03-05",
+    "budget": "5800"
+  },
+  {
+    "name": "Canada 2023",
+    "currency": "canadian dollar",
+    "startDate": "2023-07-10",
+    "endDate": "2023-07-25",
+    "budget": "5000"
+  },
+  {
+    "name": "Thailand 2024",
+    "currency": "baht",
+    "startDate": "2024-01-05",
+    "endDate": "2024-01-20",
+    "budget": "3900"
+  },
+  {
+    "name": "Portugal 2023",
+    "currency": "euro",
+    "startDate": "2023-06-01",
+    "endDate": "2023-06-15",
+    "budget": "4300"
+  },
+  {
+    "name": "Germany 2022",
+    "currency": "euro",
+    "startDate": "2022-10-10",
+    "endDate": "2022-10-24",
+    "budget": "4800"
+  }
+]
