@@ -24,7 +24,7 @@ export default function MyButton({
 }: MyButtonProps) {
   return (
     <Flex>
-      <TouchableOpacity onPress={onPress}>
+      <TouchableOpacity onPress={onPress} testID="MyButton:Button:ClickMe">
         <Text style={styles.button}>{buttonName}</Text>
       </TouchableOpacity>
     </Flex>
