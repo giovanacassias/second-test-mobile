@@ -16,8 +16,11 @@ Portanto, a diferença entre eles é o escopo. Enquanto os testes unitários tes
 
 ## TESTE E2E
 
-[x] Abrir o aplicativo
-[x] Fechar o modal "got it"
-[x] Clicar em "new trip"
-[x] Preencher formulário de nova viagem
-[x] Verificar com assert se o card com as informações cadastradas está sendo mostrado
+- [x] Abrir o aplicativo
+- [x] Fechar o modal "got it"
+- [x] Clicar em "new trip"
+- [x] Preencher formulário de nova viagem
+- [x] Fazer scroll para visualizar a flatlist de viagens cadastradas
+- [x] Verificar com assert se o card com as informações cadastradas está sendo mostrado
+- [x] Tirar um print da tela
+- [x] Fechar o app
