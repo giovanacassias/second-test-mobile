@@ -21,6 +21,7 @@ export default function TripForm({ btnName, rota }: TripFormProps) {
     budget: "",
   });
 
+  //TRANSFORMAR EM UM CUSTOM HOOK
   const handleChange = (field: keyof typeof trip, value: string) => {
     const updatedTrip = { ...trip, [field]: value };
     setTrip(updatedTrip);
@@ -44,33 +45,43 @@ export default function TripForm({ btnName, rota }: TripFormProps) {
           placeholder="France 2024"
           value={trip.name}
           onChangeText={(text) => handleChange("name", text)}
+          testID="input-trip-name"
         />
         <InputComLabel
           campo="Currency"
           placeholder="EUR - Euro"
           value={trip.currency}
           onChangeText={(text) => handleChange("currency", text)}
+          testID="input-trip-currency"
         />
         <InputComLabel
           campo="Trip starts at"
           placeholder="10/12/2024"
           value={trip.startDate}
           onChangeText={(text) => handleChange("startDate", text)}
+          testID="input-trip-start"
         />
         <InputComLabel
           campo="Trip ends at"
           placeholder="20/12/2024"
           value={trip.endDate}
           onChangeText={(text) => handleChange("endDate", text)}
+          testID="input-trip-end"
         />
         <InputComLabel
           campo="Budget"
           placeholder="$10,000"
           value={trip.budget}
           onChangeText={(text) => handleChange("budget", text)}
+          testID="input-trip-budget"
         />
       </Flex>
-      <MyButton buttonName={btnName} rota={rota} onPress={handleSubmit} />
+      <MyButton
+        buttonName={btnName}
+        rota={rota}
+        onPress={handleSubmit}
+        testID="create-trip-btn"
+      />
     </View>
   );
 }

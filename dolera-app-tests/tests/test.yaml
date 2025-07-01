@@ -1,0 +1,34 @@
+appId: com.second.test.mobile
+env:
+  NAME: Amazon 2026
+---
+- openLink: exp://192.168.15.86:8081
+- tapOn:
+    id: close-modal
+- tapOn:
+    id: new-trip-btn
+- tapOn:
+    id: input-trip-name
+- inputText: ${NAME}
+- tapOn:
+    id: input-trip-currency
+- inputText: "Real"
+- tapOn:
+    id: input-trip-start
+- inputText: "02/10/2026"
+- tapOn:
+    id: input-trip-end
+- inputText: "02/20/2026"
+- tapOn:
+    id: input-trip-budget
+- inputText: "8000"
+- tapOn:
+    id: create-trip-btn
+- assertVisible: "Amazon 2026"
+- scrollUntilVisible:
+    element:
+      text: "Germany 2022"
+    direction: DOWN
+- assertVisible: "Germany 2022"
+- takeScreenshot: tela_all_trips
+- stopApp

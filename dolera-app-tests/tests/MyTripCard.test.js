@@ -1,7 +1,9 @@
 // BookCard.test.tsx
 import React from "react";
 import { render } from "@testing-library/react-native";
-import TripCard from "./components/TripCard";
+import TripCard from "../components/TripCard";
+
+//ICON TAVA DANDO WARNING ACT()
 
 beforeAll(() => {
   jest.spyOn(console, "error").mockImplementation((msg) => {

@@ -36,7 +36,9 @@ export default function TripCard({
           align="center"
           justify="space-between"
         >
-          <Text style={styles.tripName} testID="CardInfo:name">{name}</Text>
+          <Text style={styles.tripName} testID="CardInfo:name">
+            {name}
+          </Text>
           <TouchableOpacity
             onPress={() => {
               console.log("Botão pressionado");
@@ -53,7 +55,12 @@ export default function TripCard({
               );
             }}
           >
-            <MaterialIcons name="edit" size={20} color="#FA9984" />
+            <MaterialIcons
+              name="edit"
+              size={20}
+              color="#FA9984"
+              testID={`pencil-icon-${name.replace(/\s+/g, "_").toLowerCase()}`}
+            />
           </TouchableOpacity>
         </Flex>
         <Flex

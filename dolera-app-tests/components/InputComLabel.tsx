@@ -6,6 +6,7 @@ type InputComLabelProps = {
   placeholder: string;
   value: string;
   onChangeText: (text: string) => void;
+  testID: string
 };
 
 export default function InputComLabel({
@@ -13,6 +14,7 @@ export default function InputComLabel({
   placeholder,
   value,
   onChangeText,
+  testID
 }: InputComLabelProps) {
   return (
     <View style={styles.container}>
@@ -23,6 +25,7 @@ export default function InputComLabel({
         value={value}
         onChangeText={onChangeText}
         placeholderTextColor="#aaa"
+        testID={testID}
       />
     </View>
   );

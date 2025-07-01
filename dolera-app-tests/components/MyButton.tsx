@@ -14,6 +14,7 @@ type MyButtonProps = {
   rota: string;
   style?: StyleProp<ViewStyle>;
   onPress?: () => void;
+  testID: string
 };
 
 export default function MyButton({
@@ -21,10 +22,11 @@ export default function MyButton({
   rota,
   style,
   onPress,
+  testID
 }: MyButtonProps) {
   return (
     <Flex>
-      <TouchableOpacity onPress={onPress} testID="MyButton:Button:ClickMe">
+      <TouchableOpacity onPress={onPress} testID={testID}>
         <Text style={styles.button}>{buttonName}</Text>
       </TouchableOpacity>
     </Flex>

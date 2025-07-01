@@ -19,7 +19,12 @@ export default function MyModal({ visibility, onClose }: MyModalProps) {
           <Text style={styles.text}>
             Welcome to Dolera, your app to track expenses while traveling
           </Text>
-          <Button color={"#FA9984"} title="got it" onPress={onClose} />
+          <Button
+            color={"#FA9984"}
+            title="got it"
+            onPress={onClose}
+            testID="close-modal"
+          />
         </View>
       </View>
     </Modal>

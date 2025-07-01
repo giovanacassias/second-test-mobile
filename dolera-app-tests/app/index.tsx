@@ -29,6 +29,7 @@ function index() {
           h2="Oops..."
           imgURL="https://res.cloudinary.com/ddb437lsi/image/upload/v1747450986/passport.png"
           rota="/newtrip"
+          testID="new-trip-btn"
         />
       </Flex>
     </View>

@@ -12,6 +12,7 @@ type BodyProps = {
   imgURL: string;
   buttonName: string;
   rota: string;
+  testID: string;
 };
 
 export default function Body({
@@ -20,6 +21,7 @@ export default function Body({
   imgURL,
   buttonName,
   rota,
+  testID,
 }: BodyProps) {
   const router = useRouter();
 
@@ -33,7 +35,12 @@ export default function Body({
       <Flex align="center" justify="center" style={styles.container}>
         <Image source={{ uri: imgURL }} style={styles.img} />
       </Flex>
-      <MyButton buttonName={buttonName} rota={rota} onPress={handlePress} />
+      <MyButton
+        buttonName={buttonName}
+        rota={rota}
+        onPress={handlePress}
+        testID={testID}
+      />
     </Flex>
   );
 }
